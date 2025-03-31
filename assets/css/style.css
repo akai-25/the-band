@@ -181,7 +181,7 @@ html{
     margin-top: 46px;
     padding-top: 50%;
     position: relative;
-    background: url(./Slider/chicago.jpg) top center / cover no-repeat;
+    background: url(../img/Slider/chicago.jpg) top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -191,6 +191,7 @@ html{
     bottom: 0;
     text-align: center;
     margin-bottom: 47px;
+    text-shadow: 0 0 1px #000;
 }
 
 #slider .text-heading{
@@ -510,7 +511,7 @@ html{
 }
 
 /* Mobile & Tablet */
-@media (max-width: 1023px){
+@media (max-width: 63.9375em){
     #nav .subnav a{
         padding: 4px 12px;
     }    
@@ -534,7 +535,7 @@ html{
 
 
 /* Mobile */
-@media (max-width: 739px){
+@media (max-width: 46.1875em){
     .c-full{
         width: 100% !important;
     }
