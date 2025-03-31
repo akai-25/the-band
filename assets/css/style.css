@@ -1,0 +1,585 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Css chung */
+html{
+    font-family: "Segoe UI", Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.pull-right{
+    float: right;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+    
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: calc(100% / 3);
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    text-align: center;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+    
+/* Begin: Heading */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav {
+    display: flex;
+    position: relative;
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav .subnav a{
+    color: #000;
+    line-height: 38.5px ;
+    padding: 0 12px;
+    display: block;
+    min-width: 160px;
+}
+
+#header .mobile-menu-btn{
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    line-height: 46px;
+    padding: 0px 23px;
+    float: right;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336 !important;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+/* #nav > li:hover > a,
+#nav .subnav li:hover a{ */
+#nav li:hover > a{
+    color: #000;
+    background-color: #ccc;
+    /* display: inline-block; */
+}
+
+#nav li:hover a{
+    /* cursor: auto; */
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* End: Heading */
+
+
+/* Begin: Slider */
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: url(./Slider/chicago.jpg) top center / cover no-repeat;
+}
+
+#slider .text-content{
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+#slider .text-heading{
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-weight: 24px;
+}
+
+#slider .text-description{
+    font-weight: bolder;
+    font-size: 15px;
+}
+/* End: Slider */
+
+/* Beging: Content */
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-heading{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}   
+
+#content .content-sub-heading{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .content-text-about{
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    margin-top: 46px;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.ticket-list{
+    margin-top: 30px;
+    background-color: #fff;
+    color: #757575;
+}
+
+.ticket-list li{
+    list-style-type: none;
+    border-bottom: 1px #ddd solid;
+    padding: 8px 16px;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+.place-list{
+    /* margin: 32px -8px 48px; */
+    margin-top: 16px;
+}
+
+/* .place-item{
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+} */
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    color: #000;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-weight: bolder;
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+
+.theme-black{
+    background-color: #000;
+    color: #fff !important;
+    width: 100% !important;
+}
+
+/* Contact */
+
+.contact-content{
+    margin-top: 30px;
+}
+
+.contact-content a{
+    color: #0000ee;
+    opacity: 0.6;
+}
+
+.contact-content a:hover{
+    opacity: 1;
+}
+
+.contact-info{
+    font-size: 18px;
+}
+
+.contact-info i[class*="fa-"] {
+    width: 30px;
+    line-height: 1.5;
+    /* display: inline-block; */
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+/* Begining footer */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list{
+    font-size: 24px;
+}
+
+#footer .copyright,
+#footer .copyright a,
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+/* tickets-Modal-Pay */
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    position: absolute;
+    top: 100px;
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    animation: modalFladeIn ease 0.4s;
+}
+
+.modal-close {
+    float: right;
+    padding: 8px 16px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.modal-header {
+    font-size: 30px;
+    color: #fff;
+    background-color: #009688;
+    text-align: center;
+    padding: 45px 16px;
+    letter-spacing: 2px;
+}
+
+.ticket-suicase{
+    margin-right: 4px;
+}
+
+.modal-body{
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.modal-body .modal-label {
+    display: block;
+    margin: 20px 0 10px;
+}
+
+.modal-body .modal-input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.modal-body .modal-pay {
+    width: 100%;
+    color: #fff;
+    background-color: #009688;
+    margin: 16px 0;
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.modal-body .modal-footer-close {
+    color: #fff;
+    background-color: #f44336;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 16px 0;
+}
+
+.modal-body .modal-help {
+    float: right;
+    margin: 15px 0;
+}
+
+.modal-body .modal-help a{
+    color: #2196F3;
+}
+
+.modal-close:hover,
+.modal-body .modal-pay:hover,
+.modal-body .modal-footer-close:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+@keyframes modalFladeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px){
+    #nav .subnav a{
+        padding: 4px 12px;
+    }    
+    .btn{
+        padding: 16px 16px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+    }
+    .contact-info {
+        line-height: 2;
+    }
+    #footer .social-list a{
+        margin: 0 8px;
+    }
+    #footer .copyright a{
+        padding: 13px 0;
+        display: inline-block;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 739px){
+    .c-full{
+        width: 100% !important;
+    }
+    .c-col-full{
+        width: 100%;
+    }
+    .c-mt-8{
+        margin-top: 8px;
+    }
+    .c-mt-16{
+        margin-top: 16px;
+    }
+    .c-mt-32{
+        margin-top: 32px;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #nav{
+        display: block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 4px 36px;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav li{
+        display: block;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+}
