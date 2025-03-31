@@ -550,6 +550,9 @@ html{
     .c-mt-32{
         margin-top: 32px;
     }
+    .btn{
+        font-size: 16px;
+    }
     #header{
         overflow: hidden;
     }
@@ -581,5 +584,8 @@ html{
     }
     .contact-form{
         margin-top: 32px;
+    }
+    .form-control{
+        font-size: 16px;
     }
 }
